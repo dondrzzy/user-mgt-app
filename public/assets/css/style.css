@@ -1,0 +1,24 @@
+.fa-spinner {
+  animation: spin 1s infinite;
+  -moz-animation: spin 1s infinite;
+  -webkit-animation: spin 1s infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@-moz-keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.invalid-feedback ul{
+  list-style-type: none;
+  padding-left: 0;
+}

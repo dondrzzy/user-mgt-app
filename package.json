@@ -1,0 +1,35 @@
+{
+  "name": "user-app",
+  "version": "1.0.0",
+  "description": "A simple app with a user module",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "author": "Sibo Donald",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-strategy": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dondrzzy/user-mgt-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dondrzzy/user-mgt-app/issues"
+  },
+  "homepage": "https://github.com/dondrzzy/user-mgt-app#readme"
+}

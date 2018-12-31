@@ -1,0 +1,23 @@
+<h3>User Login</h3>
+<div class="row">
+  <div class="col-6">
+    <div class="alert alert-{{ main.messageClass || google.messageClass}}" role="alert">
+      {{ main.message || google.message }}
+    </div>
+    <form ng-submit="main.loginUser(main.user)">
+      <div class="form-group">
+        <label>username</label>
+        <input type="text" class="form-control" ng-model="main.user.username" placeholder="Username">
+      </div>
+      <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" ng-model="main.user.password" placeholder="Password">
+        </div>
+      <button type="submit" class="btn btn-primary">Login</button>&nbsp
+      <button type="button" ng-click="main.google()" class="btn btn-primary">Google</button>
+      <span ng-if="main.loading"><i class="fa fa-spinner"></i></span>
+    </form>
+
+    <!-- <button class="btn btn-primary" ng-click="main.google()"><i class="fa fa-google" aria-hidden="true"></i></button> -->
+  </div>
+</div>
